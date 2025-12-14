@@ -24,15 +24,33 @@ body {
 }
 
 .hero {
-  background: #dfe6d8;
-  padding: 100px 40px;
+  background:
+    linear-gradient(rgba(246, 242, 236, 0.85), rgba(246, 242, 236, 0.85)),
+    url("hero.jpg") center / cover no-repeat;
+  padding: 120px 40px;
   text-align: center;
 }
+
 
 .hero h1 {
   font-size: 42px;
   margin-bottom: 10px;
 }
+
+.apropos img {
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+
+h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #6b7d5b;
+  margin-top: 10px;
+}
+
 
 .hero p {
   font-size: 18px;
@@ -51,10 +69,11 @@ body {
 .section {
   max-width: 1000px;
   margin: auto;
-  padding: 80px 40px;
+  padding: 60px 40px;
 }
 
 .apropos {
+  margin-top: -40px;
   display: flex;
   gap: 40px;
   align-items: center;
