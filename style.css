@@ -99,3 +99,25 @@ h2::after {
   padding: 30px;
   font-size: 14px;
 }
+
+@media (max-width: 768px) {
+  .nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .apropos {
+    flex-direction: column;
+    text-align: center;
+    margin-top: 0;
+  }
+
+  .apropos img {
+    width: 200px;
+  }
+
+  .hero {
+    padding: 80px 20px;
+  }
+}
+
